@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Shopping List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/scss/main.scss" />
+</head>
+
+<body>
+    <include src="./partials/header.html"></include>
+
+    <div id="SL-container">
+        <div id="SL-support">
+            <include src="./partials/supportUkrainePart.html"></include>
+        </div>
+
+        <div id="SL-flex">
+            <div style="display: flex; flex-direction: row; gap: 25px;">
+                <h2 id="SL-title">Shopping <span id="SL-title-span">List</span></h2>
+
+                <!-- testowe  -->
+                <!-- <button type="button" id="SL-add">Add test books</button>
+                <button type="button" id="SL-buy">Buy / Remove books</button> -->
+
+            </div>
+            <div id="SL-placeholder">
+                <p>This page is empty, add some books and proceed to order.</p>
+                <img src="/src/images/book-shopping-list.png" alt="falling books">
+            </div>
+
+            <ul id="SL-list">
+
+                <!-- testowa książka -->
+
+                <!-- <li class="SL-book">
+                    <img src="https://placehold.jp/100x142.png" alt="placeholder" class="SL-book-cover">
+                    <div class="SL-d1">
+                        <h3 class="SL-book-title">tytuł</h3>
+                        <p class="SL-book-category">kategoria</p>
+                        <p class="SL-book-description"> Lorem ipsum dolor sit amet consectetur adipisicing eli ab
+                            enim, numquam fugiat maiores tenetur aliquam rerum vitae placeat minus!</p>
+                        <div class="SL-d2">
+                            <p class="SL-book-author">autor</p>
+                            <div class="SL-d3">
+                                <a href=""><img src="./images/amazon.png" alt="amazon link"></a>
+                                <a href=""><img src="./images/book-orange.png" alt="księgarnia link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button value='aaaaa' type="button" class="SL-remove">
+                        <svg>
+                            <use href="./images/icons.svg#icon-trash-03"></use>
+                        </svg>
+                    </button>
+                </li> -->
+
+                <!-- testowa książka -->
+
+
+            </ul>
+
+            <div id="SL-pages">
+                <div class="SL-pages-box">
+                    <button type="button" class="SL-ring" id="SL-pages-first"> &lt;&lt; </button>
+                    <button type="button" class="SL-ring" id="SL-pages-previous">&lt;</button>
+                </div>
+                <div class="SL-pages-box">
+                    <button type="button" class="SL-ring" id="SL-pages-actual">1</button>
+                    <button type="button" class="SL-ring" id="SL-pages-after">2</button>
+                    <button type="burtton" class="SL-ring" id="SL-pages-chose">...</button>
+                </div>
+                <div class="SL-pages-box">
+                    <button type="button" class="SL-ring" id="SL-pages-next">&gt;</button>
+                    <button type="button" class="SL-ring" id="SL-pages-last">&gt;&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/shopping-list/shopping.js" type="module"></script>
+
+    <include src="./partials/login-modal.html"></include>
+
+
+
+
+</body>
+
+</html>
